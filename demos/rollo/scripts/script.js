@@ -30,12 +30,12 @@ function getTop(event) {
     return event.pageY + 15 + "px";
   } else {
     tooltip.className = 'tooltip bottom';
-    return event.pageY - 44 - parseInt(getComputedStyle(tooltip).height) + "px";
+    return event.pageY - 44 - parseInt(getComputedStyle(tooltip).height, 10) + "px";
   }
 }
 
 function getLeft(x) {
-  return x.pageX - ((parseInt(getComputedStyle(tooltip).width) / 2) + 15) + "px";
+  return x.pageX - ((parseInt(getComputedStyle(tooltip).width, 10) / 2) + 15) + "px";
 }
   
 function showElement(event) {
