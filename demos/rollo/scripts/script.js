@@ -13,9 +13,6 @@ var viking     = document.querySelector('svg'),
 
 function cleanUp(string) {
   return string.replace(/xmlns=\".+\"/, '');
-              //might be cool to do a collapsed super long attributes
-              //or not. somehow. probably have to change to innerHTML from innerText
-              // .replace(/\sd=\"[ACLMcz0-9\s,.\-]+\"/, ' d="..."');
 }
 
 function createTooltip(el, event) {
